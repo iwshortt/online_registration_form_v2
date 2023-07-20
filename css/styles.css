@@ -1,0 +1,124 @@
+/* Global Syles */
+* {
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+/* Header */
+header {
+    padding: 2rem 0;
+    text-align: center;
+    background-color: rgb(69, 69, 100);
+    color: white;
+    margin: -8px -8px 0;
+}
+
+/* main */
+.wrapper {
+    margin: 0 auto 350px;
+}
+.signup {
+    text-align: center;
+    border-bottom: 4px solid rgb(69, 69, 100);
+    margin-bottom: 3px;
+}
+
+/* Form */
+form {
+    border-top: 2px solid rgb(69, 69, 100);
+}
+fieldset {
+    border: none;
+    border-bottom: 2px solid rgb(69, 69, 100);
+    margin: 2em 0 0;
+    padding: 0;
+}
+fieldset div:last-child {
+    margin-bottom: 2em;
+}
+legend{
+    margin-bottom: 1.75em;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+/* Fieldset 1 */
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+label,
+input,
+select {
+    margin-bottom: .75em;
+}
+label {
+    font-size: 1rem;
+    font-weight: 300;
+}
+input,
+select,
+textarea {
+    padding: 1.25em 1.5em;
+    background-color: rgb(179, 179, 179);
+    border: none;
+    border-radius: 5px;
+}
+.contact input::placeholder {
+    text-align: right;
+}
+.zip input{
+    max-width: 50%;
+}
+
+/* Fieldset 2 */
+.newsletter {
+    border-bottom: none;
+}
+.newsletter label {
+    margin-left: .5em;
+}
+.newsletter p {
+    margin: 1.5em 0 1em;
+}
+textarea {
+    resize: none;
+    width: 100%;
+    height: 6rem;
+    margin-bottom: 2rem;
+}
+button {
+    width: 100%;
+    height: 3rem;
+    margin-bottom: .5rem;
+    background-color: #52bab3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+}
+
+/* Media Queries*/
+@media screen and (min-width: 768px) {
+    .wrapper {
+        max-width: 65%;
+    }
+    .contact {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .contact-information input,
+    select {
+        width: 590px;
+    }
+    label {
+        width: 115px;
+    }
+    .zip input {
+        width: 25%;
+        align-self: start;
+    }
+}
